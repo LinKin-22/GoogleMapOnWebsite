@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#map {
+	height: 700px;  /* The height is 400 pixels */
+	width: 100%;  /* The width is the width of the web page */
+	/*background-color: grey;*/
+}
+
+.mapContainer{
+    width:100%;
+    position: relative;
+}
+.mapContainer a.direction-link {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 100010;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 25px;
+    padding: 8px 20px 8px 50px;
+    background: #0094de;
+    background-image: url('direction-icon.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.mapContainer a.direction-link:hover {
+    text-decoration: none;
+    background: #0072ab;
+    color: #FFF;
+    background-image: url('direction-icon.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+}

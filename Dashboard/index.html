@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvzZhpeoRzD_2-wgOHU59wD2tSbiiWyco"></script>
+	<script>
+		var myCenter = new google.maps.LatLng(23.780801, 90.408130);
+		function initialize(){
+		    var mapProp = {
+		        center:myCenter,
+		        zoom:12,
+		        mapTypeId:google.maps.MapTypeId.ROADMAP
+		    };
+		    var map = new google.maps.Map(document.getElementById("map"),mapProp);
+		    var marker = new google.maps.Marker({
+		        position:myCenter,
+		    });
+		    marker.setMap(map);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="topnav">
+				  <a class="active" href="#home">Home</a>
+				  <a href="#news">News</a>
+				  <a href="#contact">Contact</a>
+				  <a href="#about">About</a>
+				</div>
+			</div>
+			
+			<div style="padding-left:16px">
+			  <h2 align="center">ILC Dashboard on Google map</h2>
+			  <p></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<center>
+
+				<div class="mapContainer">
+				    <a class="direction-link" target="_blank" href="https://www.google.com/maps/place/Development+Design+Consultants+Limited+(DDC)/@23.7805833,90.4080846,20z/data=!4m12!1m6!3m5!1s0x3755c77404108c79:0x51ff670ca93018e7!2sDevelopment+Design+Consultants+Limited+(DDC)!8m2!3d23.7807674!4d90.4081289!3m4!1s0x3755c77404108c79:0x51ff670ca93018e7!8m2!3d23.7807674!4d90.4081289&amp;daddr=23.780801, 90.408130&amp;hl=en"> Get Directions</a>
+				    <div id="map"></div>
+				</div>
+			</center>
+			
+		</div>
+	</div>
+	
+	
+</body>
+</html>
